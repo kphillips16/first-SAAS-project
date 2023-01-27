@@ -1,0 +1,288 @@
+@media (max-width: 1023px) {
+    .navbar-compact {
+        background-color: var(--white);
+        display: flex;
+        width: 100%;
+        z-index: 50;
+        justify-content: space-between;
+    }
+
+    .right-nav {
+        transform: translateY(-70px);
+        transition: transform 0.2s;
+        position: absolute;
+        top: 4.375rem;
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--white);
+        z-index: 2;
+        width: 100%;
+        padding: var(--size-20) 0;
+    }
+
+    .nav-open {
+        transform: translateY(0);
+    }
+
+    .collapsed-menu {
+        pointer-events: all;
+        display: inline;
+    }
+
+    .collapsed-menu .trigram {
+        font-size: large;
+        font-weight: 600;
+        display: inline;
+    }
+
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 46.875rem;
+    }
+
+    .header-flex .wrapper {
+        width: 100%;
+    }
+
+    .head-wrapper .head-header {
+        margin: auto;
+    }
+
+    .header-flex .wrapper .asana {
+        right: 15%;
+    }
+
+    .header-flex .wrapper .atlassian {
+        left: 50%;
+    }
+
+    .header-flex .wrapper .calendar {
+        top: 250px;
+        right: 17%;
+    }
+
+    .header-flex .wrapper .google {
+        left: 20%;
+    }
+
+    .header-flex .wrapper .google-a {
+        top: 250px;
+        left: 35%;
+    }
+
+    .header-flex .wrapper .paypal {
+        top: 120px;
+        left: 22%;
+    }
+
+    .header-flex .wrapper .weave {
+        top: 120px;
+        left: 65%;
+    }
+
+    .benefit-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .prospective .wrapper:nth-child(1) {
+        padding-top: 0;
+    }
+
+    .prospective {
+        flex-direction: column;
+        padding-top: 0;
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .prospective .wrapper {
+        padding-top: var(--size-30);
+        width: 100%;
+    }
+
+    .prospective .wrapper h2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    .hub-spot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .christina {
+        height: 550px;
+    }
+
+    .hub-spot .christina-img {
+        width: 85%;
+        z-index: 1;
+        float: right;
+    }
+
+    .hub-testimonial {
+        padding-left: 0;
+        width: 75%;
+    }
+
+    .pricing-flex {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pricing-plan {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pricing-plan p {
+        text-align: left;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .hire-us {
+        flex-direction: column;
+    }
+
+    .hire-us-text {
+        gap: 50px;
+        flex-direction: row;
+        margin-top: 0;
+        padding-bottom: var(--size-50);
+        margin-right: 0;
+    }
+
+    .hire-us-text hr {
+        width: 100%;
+    }
+
+    .hire-us-text p br {
+        display: none;
+    }
+
+    .hire-us-names p {
+        margin-bottom: var(--size-25);
+    }
+
+    .hire-us-people {
+        padding-bottom: var(--size-25);
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: var(--size-50) var(--size-25);
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .right-nav {
+        transform: translateY(-305px);
+        flex-direction: column;
+    }
+
+    .right-nav.nav-open{
+        transform: translateY(0);
+    }
+
+    .head-wrapper {
+        margin-top: var(--size-100);
+    }
+
+    .header-flex {
+        gap: var(--size-50);
+    }
+
+    .header-flex .wrapper .asana {
+        right: 0%;
+    }
+
+    .header-flex .wrapper .atlassian {
+        left: 35%;
+    }
+
+    .header-flex .wrapper .calendar {
+        right: 0%;
+    }
+
+    .header-flex .wrapper .google {
+        left: 0%;
+    }
+
+    .header-flex .wrapper .google-a {
+        left: 35%;
+    }
+
+    .header-flex .wrapper .paypal {
+        left: 5%;
+    }
+
+    .header-flex .wrapper .weave {
+        left: 65%;
+    }
+
+    .why-front-list {
+        flex-direction: column;
+    }
+
+    .why-front-list li {
+        display: flex;
+        align-items: center;
+    }
+
+    .why-front-list .bubble {
+        margin-left: 15%;
+        margin-right: 5%;
+    }
+
+    .christina {
+        transform: scale(70%);
+    }
+
+    .world-best .logos {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--size-25);
+    }
+
+    .hire-us-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-line {
+        flex-direction: column;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom-flex {
+        flex-direction: column;
+    }
+
+    .flex-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-right select {
+        width: 50%;
+    }
+}
